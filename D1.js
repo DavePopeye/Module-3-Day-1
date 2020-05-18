@@ -95,10 +95,10 @@ Convert a phrase to its acronym, like Portable Network Graphics to its acronym (
 
 function sameSum(x, y) {
     if (x === y) {
-        return 3 * (x + y)
+        return 3 * (x + y);
     }
     else {
-        return (x + y)
+        return (x + y);
     }
 
 }
@@ -109,16 +109,16 @@ console.log(sameSum(2, 2))
 
 function fifty(x, y) {
     if (x + y === 50) {
-        return true
+        return true;
     }
     else if (x === 50) {
-        return true
+        return true;
     }
     else if (y === 50) {
-        return true
+        return true;
     }
     else if (x + y !== 50) {
-        return (x + y)
+        return (x + y);
     }
 
 }
@@ -165,11 +165,51 @@ console.log(max_of_three(1000, 510, 440));
 function cityName(place) {
     if (place.length >= 3 && ((place.substring(0, 3) == 'Los') || (place.substring(0, 3) == 'New'))) {
         return place;
-    }
+    };
     return 'Blank';
 }
 
 console.log(cityName("New York"));
 console.log(cityName("Los Santos"));
 console.log(cityName("London"));
+
+/*Ex 08*/
+
+function interThree(number){
+    return number[0] + number[1] + number[2];
+}
+
+console.log(interThree([10, 20, 30]))
+
+
+/*Ex 09*/
+
+function insideNum(number){
+    if (number.indexOf(1) != -1 || number.indexOf(3) != -1){
+        return true;
+     } 
+     else
+     {
+        return false;
+     }
+ }
+ 
+ console.log(insideNum([1, 5]))
+ console.log(insideNum([4, 5]))
+
+ /*Ex 10*/
+
+ function insideNo(number){
+    if (number.indexOf(1) == -1 && number.indexOf(3) == -1){
+        return true;
+     } 
+     else
+     {
+        return false;
+     }
+ }
+ 
+ console.log(insideNo([1, 5]))
+ console.log(insideNo([4, 5]))
+
 
