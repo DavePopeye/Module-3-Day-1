@@ -90,3 +90,86 @@ In raindrop-speak, this would be "34".
 Convert a phrase to its acronym, like Portable Network Graphics to its acronym (PNG).
 
 */
+
+/*Ex 01*/
+
+function sameSum(x, y) {
+    if (x === y) {
+        return 3 * (x + y)
+    }
+    else {
+        return (x + y)
+    }
+
+}
+console.log(sameSum(1, 2))
+console.log(sameSum(2, 2))
+
+/*Ex 02*/
+
+function fifty(x, y) {
+    if (x + y === 50) {
+        return true
+    }
+    else if (x === 50) {
+        return true
+    }
+    else if (y === 50) {
+        return true
+    }
+    else if (x + y !== 50) {
+        return (x + y)
+    }
+
+}
+
+console.log(fifty(25, 24))
+console.log(fifty(25, 25))
+console.log(fifty(50, 2))
+console.log(fifty(2, 50))
+
+/*Ex 03*/
+
+function cutString(str) {
+    let word = str.slice(1);
+    return word
+}
+
+console.log(cutString("Hello"))
+
+/*Ex 04*/
+
+function max_of_three(x, y, z) {
+    let val = 0;
+    if (x > y) {
+        val = x;
+    } else {
+        val = y;
+    }
+    if (z > val) {
+        let val = z;
+    }
+    return val;
+}
+
+console.log(max_of_three(1, 0, 1));
+console.log(max_of_three(0, -10, -20));
+console.log(max_of_three(1000, 510, 440));
+
+/*Ex 05*/
+
+/*Ex 06*/
+
+/*Ex 07*/
+
+function cityName(place) {
+    if (place.length >= 3 && ((place.substring(0, 3) == 'Los') || (place.substring(0, 3) == 'New'))) {
+        return place;
+    }
+    return 'Blank';
+}
+
+console.log(cityName("New York"));
+console.log(cityName("Los Santos"));
+console.log(cityName("London"));
+
